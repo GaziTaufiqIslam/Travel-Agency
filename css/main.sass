@@ -1,5 +1,145 @@
 @import "modules/bourbon/bourbon"
 @import "modules/vars"
+
+body
+  h1,h2,h3,h4,h5,h6,p,a
+    margin: 0
+    padding: 0
+  color: $text
+  a:hover
+    text-decoration: none
+  .navbar
+    border: none
+    background: transparent
+    height: 20vh
+    +transition
+  .nav-up
+    top: -20vh
+  header
+    width: 100%
+    height: 100vh
+    overflow: hidden
+    +position(relative)
+    .container-fluid
+      &:before
+        content: ""
+        +position(absolute)
+        display: block
+        height: 100%
+        width: 100%
+        background: linear-gradient( transparent,transparentize(white,0.1))
+
+      padding: 0
+      height: 100%
+      background:
+        image: url("../img/Map.jpg")
+        position: center
+        size: cover
+      +transform(scale(1.1))
+      +animation(ken-burns 15s ease-out)
+
+      +position(relative)
+    .call-to-action
+      +position(absolute, null null 15vh 50%)
+      +transform(translateX(-50%))
+      &:hover
+        a
+          color: transparentize(white, 0.1)
+          background: transparentize($accent, 0.1)
+          box-shadow: 0 2px 10px black
+      a
+        color: transparentize($text, 0.2)
+        font:
+          size: 24px
+          weight: 600
+        padding: 10px
+        border-radius: 5px
+        background: transparentize($accent, 0.5)
+        +transition
+  #extra
+    background:
+      image: url("../img/LondonHospital.jpg")
+      position: center
+      size: cover
+      repeat: repeat
+    +position(relative)
+    &::before
+      content: ""
+      +position(absolute)
+      display: block
+      height: 100%
+      width: 100%
+      background: linear-gradient(transparentize(white,0.0),transparentize($text, 0.7))
+    .container-fluid
+      padding: 20vh 0
+      .row
+        max-width: 900px
+        margin: 0 auto
+        .col-sm-4
+          border-radius: 5px
+          height: 200px
+          width: 200px
+          margin: 0 50px
+          padding: 20px
+          box-shadow: 0 2px 5px black
+  #about
+    .blurb
+      padding: 20vh 50px
+      margin-right: 40%
+    .row
+      margin: 0 20px
+      +position(relative)
+      .col-sm-4
+        padding: 0px
+
+        +position(relative)
+        .up
+          +position(absolute, null 0 null null)
+
+        .down
+          +position(absolute, null 0 null null)
+
+        h1
+          +position(relative)
+    .row-2
+      max-width: 600px
+      margin-left: 40%
+      padding: 20vh 50px
+      .col-sm-6
+        width: 20vh
+        height: 20vh
+        border-radius: 50%
+        padding: 30px
+        margin: 20px
+        box-shadow: 0 2px 5px black
+  #contact
+    .snail-mail
+      margin-left: 40%
+      padding: 20vh 50px
+    .row
+      margin: 0 20px
+      +position(relative)
+      .col-sm-4
+        padding: 0px
+
+        +position(relative)
+        .up2
+          +position(absolute, null null 0 null)
+
+
+        .down2
+          +position(absolute, null null null null)
+
+        h1
+          +position(relative)
+    .contact-form
+      padding: 20vh 50px
+      margin-right: 40%
+
+  footer
+    height: 50vh
+    background: linear-gradient(transparentize($lightShadow, 0.2), transparentize($shadow, 0))
+
 h1
   font:
     family: 'Cabin Sketch'

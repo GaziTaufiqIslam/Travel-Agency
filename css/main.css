@@ -1,6 +1,161 @@
 @font-face {
   font-family: "Cabin Sketch";
   src: url("../fonts/CabinSketch-Bold.ttf"); }
+@keyframes ken-burns {
+  from {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1); }
+  to {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1); } }
+body {
+  color: #A8A7A8; }
+  body h1, body h2, body h3, body h4, body h5, body h6, body p, body a {
+    margin: 0;
+    padding: 0; }
+  body a:hover {
+    text-decoration: none; }
+  body .navbar {
+    border: none;
+    background: transparent;
+    height: 20vh;
+    -webkit-transition: all 0.15s ease-out 0s;
+    -moz-transition: all 0.15s ease-out 0s;
+    transition: all 0.15s ease-out 0s; }
+  body .nav-up {
+    top: -20vh; }
+  body header {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative; }
+    body header .container-fluid {
+      padding: 0;
+      height: 100%;
+      background-image: url("../img/Map.jpg");
+      background-position: center;
+      background-size: cover;
+      -webkit-transform: scale(1.1);
+      -moz-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      -o-transform: scale(1.1);
+      transform: scale(1.1);
+      -webkit-animation: ken-burns 15s ease-out;
+      -moz-animation: ken-burns 15s ease-out;
+      animation: ken-burns 15s ease-out;
+      position: relative; }
+      body header .container-fluid:before {
+        content: "";
+        position: absolute;
+        display: block;
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(transparent, rgba(255, 255, 255, 0.9)); }
+    body header .call-to-action {
+      position: absolute;
+      bottom: 15vh;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      -moz-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      -o-transform: translateX(-50%);
+      transform: translateX(-50%); }
+      body header .call-to-action:hover a {
+        color: rgba(255, 255, 255, 0.9);
+        background: rgba(162, 14, 61, 0.9);
+        box-shadow: 0 2px 10px black; }
+      body header .call-to-action a {
+        color: rgba(168, 167, 168, 0.8);
+        font-size: 24px;
+        font-weight: 600;
+        padding: 10px;
+        border-radius: 5px;
+        background: rgba(162, 14, 61, 0.5);
+        -webkit-transition: all 0.15s ease-out 0s;
+        -moz-transition: all 0.15s ease-out 0s;
+        transition: all 0.15s ease-out 0s; }
+  body #extra {
+    background-image: url("../img/LondonHospital.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
+    position: relative; }
+    body #extra::before {
+      content: "";
+      position: absolute;
+      display: block;
+      height: 100%;
+      width: 100%;
+      background: linear-gradient(white, rgba(168, 167, 168, 0.3)); }
+    body #extra .container-fluid {
+      padding: 20vh 0; }
+      body #extra .container-fluid .row {
+        max-width: 900px;
+        margin: 0 auto; }
+        body #extra .container-fluid .row .col-sm-4 {
+          border-radius: 5px;
+          height: 200px;
+          width: 200px;
+          margin: 0 50px;
+          padding: 20px;
+          box-shadow: 0 2px 5px black; }
+  body #about .blurb {
+    padding: 20vh 50px;
+    margin-right: 40%; }
+  body #about .row {
+    margin: 0 20px;
+    position: relative; }
+    body #about .row .col-sm-4 {
+      padding: 0px;
+      position: relative; }
+      body #about .row .col-sm-4 .up {
+        position: absolute;
+        right: 0; }
+      body #about .row .col-sm-4 .down {
+        position: absolute;
+        right: 0; }
+      body #about .row .col-sm-4 h1 {
+        position: relative; }
+  body #about .row-2 {
+    max-width: 600px;
+    margin-left: 40%;
+    padding: 20vh 50px; }
+    body #about .row-2 .col-sm-6 {
+      width: 20vh;
+      height: 20vh;
+      border-radius: 50%;
+      padding: 30px;
+      margin: 20px;
+      box-shadow: 0 2px 5px black; }
+  body #contact .snail-mail {
+    margin-left: 40%;
+    padding: 20vh 50px; }
+  body #contact .row {
+    margin: 0 20px;
+    position: relative; }
+    body #contact .row .col-sm-4 {
+      padding: 0px;
+      position: relative; }
+      body #contact .row .col-sm-4 .up2 {
+        position: absolute;
+        bottom: 0; }
+      body #contact .row .col-sm-4 .down2 {
+        position: absolute; }
+      body #contact .row .col-sm-4 h1 {
+        position: relative; }
+  body #contact .contact-form {
+    padding: 20vh 50px;
+    margin-right: 40%; }
+  body footer {
+    height: 50vh;
+    background: linear-gradient(rgba(71, 71, 71, 0.8), #363636); }
+
 h1 {
   font-family: "Cabin Sketch";
   font-weight: 700;
