@@ -1,0 +1,9 @@
+@font-face {
+  font-family: "Cabin Sketch";
+  src: url("../fonts/CabinSketch-Bold.ttf"); }
+h1 {
+  font-family: "Cabin Sketch";
+  font-weight: 700;
+  font-size: 100px; }
+
+/*# sourceMappingURL=main.css.map */
